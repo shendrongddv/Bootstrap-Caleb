@@ -1,6 +1,6 @@
 /* FONT */
-/* @import url(../fonts/poppins.css); */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+@import url(../fonts/poppins.css);
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"); */
 
 /* VARIABLE */
 :root {
@@ -183,6 +183,76 @@ img {
 }
 
 /* REVIEWS */
-#reviews {
+#review {
   padding-bottom: 120px;
+}
+
+.reviewCard .reviewFooter {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.reviewCard .reviewFooter img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.reviewCard .reviewFooter > div {
+  display: flex;
+  flex-direction: column;
+}
+
+/* BLOG */
+.blogCard {
+  margin-bottom: 12px;
+}
+
+.blogImage {
+  overflow: hidden;
+}
+
+.blogImage img {
+  transition: var(--transition);
+}
+
+.blogCard:hover .blogImage img {
+  transform: scale(1.25);
+}
+
+.blogBody {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.blogBody h3 {
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.blogBody h3:hover {
+  color: var(--c-brand);
+}
+
+.blogLink {
+  text-transform: uppercase;
+  display: inline-flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.blogLink::before {
+  content: "";
+  align-items: center;
+  width: 12px;
+  height: 2px;
+  margin-right: 6px;
+  background-color: var(--c-brand);
+  transition: var(--transition);
+}
+
+.blogLink:hover::before {
+  width: 32px;
 }
