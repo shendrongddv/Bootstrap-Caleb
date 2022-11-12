@@ -2,7 +2,7 @@
 $(".owl-carousel").owlCarousel({
   // Basic
   loop: true,
-  margin: 10,
+  margin: 24,
   nav: false,
   smartSpeed: 1000,
   dots: false,
