@@ -82,10 +82,9 @@ img {
   font-weight: 500;
   color: white;
   padding: 12px 24px;
-  line-height: 1;
+  height: 50px;
   border-radius: 0;
   transition: var(--transition);
-
   display: inline-flex;
   align-items: center;
   gap: 12px;
@@ -181,4 +180,9 @@ img {
   position: absolute;
   top: 50%;
   opacity: 1;
+}
+
+/* REVIEWS */
+#reviews {
+  padding-bottom: 120px;
 }
