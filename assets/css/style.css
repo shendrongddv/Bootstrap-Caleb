@@ -1,5 +1,6 @@
 /* FONT */
-@import url(../fonts/poppins.css);
+/* @import url(../fonts/poppins.css); */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
 
 /* VARIABLE */
 :root {
@@ -15,19 +16,25 @@
 body {
   font-family: var(--f-display);
   line-height: 1.6;
-  font-display: swap;
   color: var(--c-body);
 }
 
-/* h1,
+h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
   font-family: var(--f-display);
-  font-weight: 700 !important;
-} */
+  color: #2b2b2b;
+  font-weight: 700;
+}
 
 a {
   color: #323232;
@@ -45,9 +52,29 @@ img {
 }
 
 /* HELPER */
-.section-padding {
+.x-section-padding {
   padding-top: 120px;
   padding-bottom: 120px;
+}
+
+.x-section-subtitle {
+  font-weight: 600;
+  color: var(--c-brand);
+  text-transform: uppercase;
+}
+
+.x-gradient {
+  background: #fe8c00; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f83600,
+    #fe8c00
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f83600,
+    #fe8c00
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 /* BTN */
@@ -75,6 +102,51 @@ img {
     url(../images/bg-cover-1.jpg);
   background-position: center;
   background-size: cover;
+}
+
+/* ABOUT */
+
+/* SERVICES */
+.service-card {
+  background-color: white;
+}
+
+.service-card .icon {
+  margin: 0 auto;
+  width: 60px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--c-brand);
+}
+.service-card .icon i {
+  font-size: 28px;
+  color: white;
+}
+
+.service-card .icon,
+.service-card i,
+.service-card h3,
+.service-card p {
+  transition: var(--transition);
+}
+
+.service-card:hover {
+  background-color: var(--c-brand);
+}
+
+.service-card:hover .icon {
+  background-color: white;
+}
+.service-card:hover .icon i {
+  color: var(--c-brand);
+}
+
+.service-card:hover h3,
+.service-card:hover p {
+  color: white;
 }
 
 /* PROJECT */
