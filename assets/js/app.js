@@ -1,9 +1,16 @@
 // Owl Carousel
 $(".owl-carousel").owlCarousel({
+  // Basic
   loop: true,
   margin: 10,
   nav: false,
+  smartSpeed: 1000,
   dots: false,
+  // Autoplay
+  autoplay: true,
+  autoplayTimeout: 5000,
+  autoplayHoverPause: true,
+  // Responsive
   responsiveClass: true,
   responsive: {
     0: {

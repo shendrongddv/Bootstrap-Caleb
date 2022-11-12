@@ -76,3 +76,31 @@ img {
   background-position: center;
   background-size: cover;
 }
+
+/* PROJECT */
+.project {
+  position: relative;
+  overflow: hidden;
+}
+
+.project img {
+  transition: var(--transition);
+}
+
+.project a {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.project:hover img {
+  transform: scale(1.25);
+}
+
+.project:hover a {
+  position: absolute;
+  top: 50%;
+  opacity: 1;
+}
