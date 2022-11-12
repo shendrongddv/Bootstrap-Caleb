@@ -1,0 +1,78 @@
+/* FONT */
+@import url(../fonts/poppins.css);
+
+/* VARIABLE */
+:root {
+  --f-display: "Poppins", sans-serif;
+  --f-body: "Poppins", sans-serif;
+  --c-body: #6a6a6a;
+  --c-brand: #f50e5d;
+  --c-brand-dark: #7a052d;
+  --transition: all 0.4s ease;
+}
+
+/* RESET */
+body {
+  font-family: var(--f-display);
+  line-height: 1.6;
+  font-display: swap;
+  color: var(--c-body);
+}
+
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--f-display);
+  font-weight: 700 !important;
+} */
+
+a {
+  color: #323232;
+  text-decoration: none;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--c-brand);
+}
+
+img {
+  width: 100%;
+}
+
+/* HELPER */
+.section-padding {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+/* BTN */
+.btn {
+  font-weight: 500;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 0;
+  transition: var(--transition);
+}
+
+.btn-brand {
+  color: white;
+  background-color: var(--c-brand);
+}
+
+.btn-brand:hover {
+  color: white;
+  background-color: var(--c-brand-dark);
+}
+
+/* HERO */
+#hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/bg-cover-1.jpg);
+  background-position: center;
+  background-size: cover;
+}
